@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asanokukan</title>
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'unu7ikh',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+        }, config.scriptTimeout),
+        tk = d.createElement('script'), f = false, s = d.getElementsByTagName('script')[0],
+        a; h.className += ' wf-loading'; tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true; tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != 'complete' && a != 'loaded') return;
+        f = true; clearTimeout(t);
+        try {
+          Typekit.load(config);
+          document.body.classList.remove('hidden'); // Reveal the body
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <style>
+    body {
+      font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: rgb(32, 32, 32);
+    }
+
+    p {
+      color: rgb(96, 96, 96);
+    }
+  </style>
+  <style>
+    body.hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Coming Soon...</h1>
+  <p>Exciting things are in the works! Our website is under construction, but but we're working hard to bring you a great experience. Stay tuned!</p>
+</body>
+</html>
